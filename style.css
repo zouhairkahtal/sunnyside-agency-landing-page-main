@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.box-1-1 {
+  background-image: url(images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box-1-1 h1 {
+  font-size: 80px;
+  letter-spacing: 6px;
+  margin-top: -150px;
+  color: #fff;
+}
+.box-1-1 img {
+  margin-top: 150px;
+  width: 60px;
+}
+.box-2 {
+  width: 100%;
+  height: 1200px;
+}
+.box-2 .box-2-1,
+.box-2 .box-2-2 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+}
+.box-2 .box-2-2 {
+  flex-direction: row-reverse;
+}
+.text {
+  width: 50%;
+  height: 600px;
+  padding: 60px;
+  background-color: #fff;
+}
+.text h1 {
+  padding-bottom: 50px;
+}
+.text p {
+  line-height: 30px;
+  padding-bottom: 40px;
+  font-size: 14px;
+}
+.text a {
+  color: #000;
+  width: 120px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text hr {
+  height: 5px;
+  width: 100px;
+  border: none;
+  margin-top: -3px;
+  border-radius: 3px;
+}
+.hr1 {
+  background-color: hsl(51, 100%, 49%);
+}
+.hr2 {
+  background-color: hsl(7, 99%, 70%);
+}
+.image-1 {
+  background-color: hsl(51, 100%, 49%);
+  background-image: url(images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 600px;
+}
+.image-2 {
+  background-image: url(images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 600px;
+}
+.box-3 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.box-3 .box-3-1,
+.box-3 .box-3-2 {
+  background-color: aliceblue;
+  height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.p {
+  margin-bottom: 60px;
+  width: 350px;
+  text-align: center;
+  line-height: 25px;
+}
+.box-3 .box-3-2 {
+  background-image: url(images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-3 .box-3-1 {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-4 {
+  width: 100%;
+}
+.box-4 .box-4-1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.box-4 .box-4-2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.box-4 .box-4-2 .box-4-2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  height: 500px;
+  margin: 0 40px;
+}
+.box-4 .box-4-2 .box-4-2-1 img {
+  width: 80px;
+  border-radius: 50%;
+}
+.box-4 .box-4-2 .box-4-2-1 p {
+  line-height: 25px;
+  font-weight: 500;
+}
+.box-4 .box-4-2 .box-4-2-1 .p2 {
+  font-size: 16px;
+  margin-top: -65px;
+}
+
+.box-5 {
+  width: 100%;
+
+  display: flex;
+}
+.box-5 .box-5-1,
+.box-5 .box-5-2 {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: aliceblue;
+}
+.img {
+  background-color: bisque;
+  width: 50%;
+  height: 400px;
+}
+.img-1 {
+  background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-2 {
+  background-image: url(images/desktop/image-gallery-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-3 {
+  background-image: url(images/desktop/image-gallery-cone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-4 {
+  background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.acolor:hover {
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .box-5 {
+    width: 100%;
+    height: 800px;
+    display: block;
+  }
+  .box-5 .box-5-1,
+  .box-5 .box-5-2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: aliceblue;
+  }
+  .img {
+    background-color: bisque;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.box-6 {
+  background-color: hsl(168, 34%, 41%);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+svg,
+.links {
+  margin: 20px 0;
+}
+.icons {
+  margin-top: 100px;
+}
+.links a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+.icons img {
+  margin: 0 15px;
+}
+@media (max-width: 728px) {
+  .box-1-1 {
+    background-image: url(images/mobile/image-header.jpg);
+  }
+  .box-1-1 h1 {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: -100px;
+    color: #fff;
+  }
+  .box-1-1 img {
+    margin-top: 150px;
+    width: 50px;
+  }
+  .box-2 {
+    width: 100%;
+    height: 2000px;
+  }
+  .box-2 .box-2-1,
+  .box-2 .box-2-2 {
+    height: 1000px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .box-2 .box-2-2 {
+    flex-direction: column-reverse;
+  }
+  .image-1 {
+    background-image: url(images/desktop/image-transform.jpg);
+    width: 100%;
+    height: 1000px;
+  }
+  .image-2 {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    width: 100%;
+    height: 1000px;
+  }
+  .text {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+  }
+  .text h1 {
+    padding-bottom: 50px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  .text a {
+    width: 100%;
+    text-align: center;
+  }
+  .text hr {
+    width: 110px;
+  }
+  .box-3 {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-3 .box-3-1,
+  .box-3 .box-3-2 {
+    height: 500px;
+    width: 100%;
+  }
+  .h1 {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .p {
+    width: 100%;
+
+    font-size: 14px;
+  }
+  .box-3 .box-3-2 {
+    background-image: url(images/desktop/image-photography.jpg);
+  }
+  .box-3 .box-3-1 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
+}
+
+
+@media (max-width: 320px) {
+  .box-3 .box-3-2 {
+    background-image: url(images/mobile/image-photography.jpg);
+  }
+  .box-3 .box-3-1 {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+  }
+}
+@media (max-width: 370px) {
+  .box-4 .box-4-1 {
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: medium;
+  }
+  @media (max-width: 350px) {
+    .links a {
+      margin: 0 10px;
+    }
+    .box-1-1 h1 {
+      font-size: 50px;
+      letter-spacing: 6px;
+      margin-top: -150px;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .img-1 {
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-2 {
+    background-image: url(images/mobile/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-3 {
+    background-image: url(images/mobile/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-4 {
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img {
+    background-color: bisque;
+    width: 50%;
+    height: 200px;
+  }
+  .box-5 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}

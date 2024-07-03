@@ -1,0 +1,225 @@
+/* Resetting default margin, padding, box-sizing, and setting font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Styling for the navigation bar */
+nav {
+  height: 100px; /* Fixed height */
+  background-color: hsl(199.9deg 100% 62.16%); /* Background color using HSL */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.119); /* Box shadow for a subtle effect */
+  overflow: hidden; /* Ensures no overflow */
+}
+
+/* Styling for the navigation list */
+nav ul {
+  width: 100%;
+  height: 100px;
+  list-style: none; /* Removes default list styles */
+  display: flex; /* Flexbox for layout */
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /* Centers vertically */
+}
+
+/* Styling for each list item in the navigation */
+nav li {
+  height: 50px; /* Fixed height for each item */
+}
+
+/* Styling for links within navigation */
+nav a {
+  width: 150px;
+  height: 50px;
+  padding: 0 20px;
+  margin-right: 30px; /* Right margin between items */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%); /* White color for text */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+}
+
+/* Styles for the first list item (usually a logo or home link) */
+nav li:first-child {
+  margin-right: auto; /* Pushes it to the left side */
+}
+
+/* Hover effect for the first list item */
+nav li:first-child :hover {
+  background-color: transparent; /* Removes background on hover */
+}
+
+/* Styling for active link on desktop */
+.active-desktop,
+nav a {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px; /* Rounded corners */
+}
+
+/* Hover effect for links in navigation */
+nav a:hover {
+  background-color: hsla(0, 0%, 100%, 0.496); /* Semi-transparent white background */
+  color: #fff; /* White text color on hover */
+}
+
+/* Additional styling for the active link on desktop */
+.active-desktop {
+  background-color: hsl(0, 0%, 100%); /* White background */
+  color: #000; /* Black text color */
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  left: -30; /* Typo? Corrected to left: -30px */
+  height: 100vh; /* Full viewport height */
+  width: 75%; /* 75% width of the viewport */
+  z-index: -999; /* Behind other elements */
+  background-color: #fff; /* White background */
+  display: block; /* Block display */
+  flex-direction: column; /* Column layout */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Start from top */
+}
+
+/* Styles for the first list item in sidebar */
+.sidebar li:first-child {
+  margin-left: 60%; /* Left margin adjustment */
+}
+
+/* Hides the menu button on larger screens */
+.menuBTN {
+  display: none;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 868px) {
+
+  /* Hide certain elements on mobile */
+  .hideOnMobile {
+    display: none;
+  }
+
+  /* Styling for the menu button */
+  .menuBTN {
+    display: block; /* Displayed on smaller screens */
+    z-index: 999; /* Above other elements */
+    width: 150px;
+    height: 50px;
+    border-radius: 30px; /* Rounded corners */
+  }
+
+  /* Flexbox adjustments for navigation on smaller screens */
+  nav {
+    display: flex;
+    justify-content: center; /* Centers items */
+  }
+
+  /* Sidebar adjustments for smaller screens */
+  .sidebar {
+    position: absolute; /* Absolute positioning */
+    top: 0%; /* Top of viewport */
+    left: 0; /* Left side */
+    height: 400px; /* Fixed height */
+    width: 100%; /* Full width */
+    padding-top: 50px; /* Padding from top */
+    z-index: 999; /* Above other elements */
+    background-color: transparent; /* Transparent background */
+    display: none; /* Initially hidden */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center content */
+  }
+
+  /* Inner content of sidebar */
+  .sidebar .in-sid {
+    background-color: #fff; /* White background */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center content */
+    height: 100%; /* Full height */
+    width: 75%; /* 75% width */
+    margin-top: 40px; /* Margin from top */
+    padding-top: 30px; /* Padding from top */
+    transition: 0.5s; /* Smooth transition */
+    clip-path: polygon(90% 15%, 100% 3%, 100% 100%, 0 100%, 0 16%); /* Custom shape */
+  }
+
+  /* Hover effect for links in sidebar */
+  nav a:hover {
+    background-color: transparent; /* Transparent background on hover */
+    color: #fff; /* White text color on hover */
+  }
+
+  /* Styling for list items in sidebar */
+  .sidebar li {
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center content */
+  }
+
+  /* Adjustments for the first list item in sidebar */
+  .sidebar li:first-child {
+    margin: 0; /* No margin */
+  }
+
+  /* Styling for active link on mobile */
+  .active-mobile {
+    background-color: hsl(51, 100%, 49%); /* Background color */
+    color: hsl(213, 9%, 39%); /* Text color */
+    width: 130px;
+    height: 50px;
+    border-radius: 30px; /* Rounded corners */
+  }
+
+  /* Hover effect for active link on mobile */
+  .active-mobile:hover {
+    background-color: hsl(51, 100%, 49%); /* Background color */
+    color: hsl(213, 9%, 39%); /* Text color */
+  }
+
+  /* Text color adjustment for links on mobile */
+  nav a {
+    color: hsl(213, 9%, 39%); /* Text color */
+  }
+
+  /* Hover effect for links on mobile */
+  nav a:hover {
+    color: hsl(213, 9%, 39%); /* Text color on hover */
+  }
+
+}
+
+/* Media queries for very small screens */
+@media (max-width: 500px) {
+
+  /* Adjustment for menu button */
+  .menuBTN {
+    margin-right: -30px; /* Negative margin */
+  }
+
+  /* Adjustment for logo */
+  .logo a {
+    margin-right: 100px; /* Right margin for logo */
+  }
+
+}
+
+/* Media queries for extremely small screens */
+@media (max-width: 350px) {
+
+  /* Adjustment for first list item in navigation */
+  nav li:first-child {
+    margin-right: -50px; /* Negative margin */
+  }
+
+}
